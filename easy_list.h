@@ -2,8 +2,8 @@
 #define EASY_LIST_H
 
 #include <vector>
-#include "str_easy.h"
-#include "middle_str.h"
+
+using namespace std;
 
 //f1
 
