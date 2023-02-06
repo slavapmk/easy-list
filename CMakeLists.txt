@@ -18,4 +18,4 @@ add_executable(
 
         easy_list.h
         easy_list_f1.cpp
-)
+        easy_list_f2.cpp)
