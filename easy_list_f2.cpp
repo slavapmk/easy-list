@@ -20,7 +20,7 @@ void itc_rev_par_list(vector<int> &mass) {
 }
 
 void itc_rshift_list(vector<int> &mass) {
-    if (mass.empty())return;
+    if (mass.size() == 0)return;
     int last = mass[mass.size() - 1];
     for (unsigned long long i = mass.size() - 1; i > 0; i--)
         mass[i] = mass[i - 1];
@@ -28,7 +28,7 @@ void itc_rshift_list(vector<int> &mass) {
 }
 
 void itc_lshift_list(vector<int> &mass) {
-    if (mass.empty())return;
+    if (mass.size() == 0)return;
     int first = mass[0];
     for (unsigned long long i = 0; i < mass.size(); i++)
         mass[i] = mass[i + 1];
