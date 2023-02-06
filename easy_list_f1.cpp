@@ -31,6 +31,7 @@ int itc_sl_list(const vector<int> &mass) {
 }
 
 bool contains(int num, int digit) {
+    if (num < 0) num *= -1;
     while (num > 0) {
         if (num % 10 == digit) return true;
         num /= 10;
@@ -39,7 +40,7 @@ bool contains(int num, int digit) {
 }
 
 bool itc_same_parts_list(const vector<int> &mass) {
-    for (int digit = 0; digit < 10; ++digit) {
+    for (int digit = 0; digit <= 9; digit++) {
         int count = 0;
         for (int item: mass) {
             if (contains(item, digit))
