@@ -41,5 +41,3 @@ bool itc_isIp(string str);
 string itc_DecToBin(string str);
 
 string itc_decToBase(int num, int base);
-
-int main();

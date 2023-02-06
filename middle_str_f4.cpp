@@ -49,27 +49,3 @@ string itc_DecToBin(string str) {
         result += longToBin(last);
     return result;
 }
-
-int main() {
-    int x = 0, y = 0;
-    string direction;
-    int path;
-    cin >> direction;
-
-    while (direction != "000") {
-        cin >> path;
-
-        if (direction == "North")
-            y += path;
-        else if (direction == "South")
-            y -= path;
-        else if (direction == "East")
-            x += path;
-        else if (direction == "West")
-            x -= path;
-
-        cin >> direction;
-    }
-
-    cout << x << ' ' << y << endl;
-}
